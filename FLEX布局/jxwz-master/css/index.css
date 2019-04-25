@@ -1,0 +1,390 @@
+/*
+* @Author: YY
+* @Date:   2018-04-28 09:34:47
+* @Last Modified by:   YY
+* @Last Modified time: 2018-04-28 09:34:47
+*/
+body {
+	background-color: #f3f5f7;
+
+}
+header {
+	width: 1300px;
+	height: 100px;
+	/* background-color: pink; */
+	margin: 0 auto;
+	padding-top: 30px;
+	display:flex;}
+	
+.first-logo {
+	width: 195px;
+	height: 42px;
+	/* background-color: purple; */
+	display:flex;
+}
+.first-logo a {
+  display: block;
+  width: 195px;
+  height: 42px;
+  background: url(../images/logo.jpg) no-repeat;
+  text-indent: -990px;/*   隐藏链接里面的文字 */
+  overflow: hidden;  /* 这句话加上想必也是极好的 */
+}
+nav ul{
+	display:flex;
+	/*margin-left: 20px;*/
+}
+nav li {
+	display:flex;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 25px;
+}
+nav li a {
+	display:flex;
+	display: block;
+	height: 40px;
+	font-size: 18px;
+	padding: 0 10px;
+}
+nav li a:hover {
+	border-bottom: 2px solid #00a4ff;
+}
+.search {
+	width: 410px;
+	height: 40px;
+	background-color: purple;
+	display:flex;
+	margin-left: 160px;
+}
+.search input {
+	width: 361px;
+	height: 40px;
+	border: 1px solid #00a4ff;
+	outline: none;  /* 轮廓线 */
+	padding-left: 10px;
+	display:flex;
+}
+.search button {
+	width: 49px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	background: url(../images/fa-search.png) no-repeat;
+}
+.personal {
+	display:flex;
+	height: 40px;
+	line-height: 40px;
+}
+.personal dt, .personal dd {
+	display:flex;
+	padding: 0 20px;
+}
+.personal dl{
+	display:flex;
+
+}
+
+.personal s {
+	
+	/* padding: 20px; */
+	padding: 0 20px;
+	text-decoration: none;
+}
+.personal s::before {
+	content: "";
+	display: block;  /* 因为伪元素默认的是行内元素 */
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	border-radius: 50%;
+	
+	right: -15px;
+	top: 10px;
+}
+.personal span img {
+	border-radius: 50%;
+	margin-right: 10px;
+	transition: all 0.6s;
+}
+.personal span img:hover {
+	transform: rotate(-360deg);
+}
+.one ul{
+	display:flex;
+}
+/* second-difficult部分 */
+.second-difficult {
+	height: 420px;
+	background-color: #1c036c;
+	display: flex;
+	justify-content:space-between;
+
+}
+.inner {
+	height: 420px;
+	/*position: relative;*/
+}
+.second-difficult-subnav {
+	
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 190px;
+	background: rgba(0, 0, 0, .3);
+	padding-top: 20px;
+	margin-left:50px;
+}
+
+.second-difficult-subnav li {
+	padding-left:20px;
+	/*position: relative;*/
+	height: 40px;
+	line-height: 40px;
+}
+.second-difficult-subnav a {
+	font-size: 14px;
+	color: #fff;
+	display: block;
+
+}
+.second-difficult-subnav a:hover {
+	color: #00b4ff;
+}
+
+
+.second-difficult-subnav span {
+	/*position: absolute;*/
+	right: 20px;
+	top: 0;
+}
+.second-difficult-circle {
+	width: 176px;
+	height: 20px;
+	/* background-color: #fff; */
+	
+	left: 50%;
+	/* margin-left: -88px;  == 下面 */
+	transform: translate(-50%);
+	margin-top:0px;
+	margin-left:-450px;
+	bottom: 15px;
+}
+.second-difficult-circle i {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: rgba(255, 255, 255, 0.4);
+	margin: 0 5px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+.second-difficult-circle i:hover {
+	width: 20px;
+	background-color: #fff;
+}
+.timebook {
+	width: 228px;
+	height: 300px;
+	/*position: absolute;/*
+	right: 0;
+	top: 50%;
+	/* transform: translate(0, -50%); */
+	transform: translateY(-50%);
+	/* 但是y 要大写才可以 */
+	margin-top:200px;
+	margin-right:20px;
+	background-color: #fff;
+}
+
+.timebook dt {
+	height: 50px;
+	background-color: #9bceea;
+	font-weight: 700;
+	color: #fff;
+	line-height: 50px;
+	font-size: 18px;
+	text-align: center;
+}
+.timebook dd {
+	padding: 15px 20px 0;
+}
+.timebook dd li {
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+	/* background-color: pink; */
+	padding-top: 6px;
+}
+.timebook dd li:last-child {
+	border: 0;
+}
+.timebook  h5 {
+	font-size: 16px;
+	font-weight: normal;
+}
+.all {
+	height: 40px;
+	border: 1px solid #22b0ff;
+	color: #22b0ff;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+}
+.all:hover{
+	background-color: #22b0ff;
+	color:#fff;
+}
+
+.recommend {
+	margin-top: 10px;
+	background-color: #fff;
+	height: 60px;
+	line-height: 60px;
+	/*position: relative;*/
+	box-shadow: 0px 1px 12px rgba(0, 0, 0, .4);
+	display:flex;
+}
+.modify{
+	margin-left:50px;
+}
+
+.rec-l {
+	padding-left: 30px;
+}
+.rec-l strong {
+	color: #22b0ff;
+	font-size: 14px;
+	margin-right: 15px;
+}
+
+.rec-l a {
+	margin: 0 15px;
+	font-size: 14px;
+}
+
+.recommend em {
+	/*position: absolute;*/
+	right: 20px;
+	bottom: 0;
+}
+.look{
+	margin-left:1000px;
+}
+.products {
+	margin-top: 30px;
+	
+}
+.command{
+	margin-left:2px;
+	margin-top:-5px;
+}
+.third-pro-hd {
+	height: 40px;
+	width:1200px;
+	/*position: relative;*/
+	display: flex;
+}
+.third-pro-hd h4 {
+	font-weight: normal;
+	font-size: 18px;
+}
+.third-pro-hd a {
+/*position: absolute;*/
+	top: 0;
+	right: 20px;
+}
+.third-pro-bd li {
+	width: 228px;
+	height: 270px;
+	overflow: hidden;
+	background-color: #fff;
+	/*display:flex;*/
+	margin-right: 15px;
+	margin-bottom: 15px;
+	transition: all 0.4s;
+}
+.third-pro-bd li:hover {
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+	transform: translateY(-10px);
+}
+.third-pro-bd li:nth-child(5n) {
+	margin-right: 0;
+}
+.pic img {
+	transition: all 0.4s;	
+	
+}
+.pic img:hover {
+	margin-left: -5px;
+}
+.third-pro-title {
+	width: 185px;
+	margin: 20px auto;
+	font-size: 14px;
+	color: #050505;
+}
+.third-pro-bd p {
+	width: 185px;
+	margin: 20px auto;
+	color: #999;
+}
+.third-pro-bd p span {
+	color: #ff7c2d;
+}
+footer {
+	height: 420px;
+	background-color: #FFF;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+.footer-l {
+	margin-left: 20px;
+
+}
+.footer-l p {
+	margin: 25px 0 15px 0;
+	line-height: 24px;
+}
+.footer-l a {
+	width: 120px;
+	height: 35px;
+	display: block;
+	border: 1px solid #22b0ff;
+	text-align: center;
+	line-height: 35px;
+	color: #22b0ff;
+}
+.footer-r{
+	display:flex;
+	padding:0 0 00 175px;
+}
+.two{
+	margin:0 25px;
+}
+.two ul{
+	padding:0 30px;
+
+}
+.big{
+	font-size: 14px;
+	color: #333;
+}
+.footer-r li {
+	/*font-size: 12px;*/
+	color: rgb(63, 62, 62);
+	margin-left: 130px;
+}
+.footer-r ul li {
+
+	height: 30px;
+}
+.footer-r li {
+	height: 20px;
+	margin-inline-start: 2px;
+}
+.last{
+	display:flex;
+}
